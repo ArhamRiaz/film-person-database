@@ -1,0 +1,81 @@
+<html>
+
+    <head> </head>
+
+    <body>
+
+        <div>
+        <h3>Welcome to the Movie Database</h3>
+        </div>
+
+        <div>
+            <form action="/site" method="GET">
+            <div>
+                <label for="site">Search Streaming Service</label>
+                <input name="site" id="site" value="">
+            </div>
+            <div>
+                <button>Search for Streaming Service</button>
+            </div>
+            </form>
+        </div>
+
+        <div>
+            <form action="/movie" method="GET">
+                <div>
+                    <label for="movie">Search Movie</label>
+                    <input name="movie" id="movie" value="">
+                </div>
+                <div>
+                    <button>Search for Movie</button>
+                </div>
+                </form>
+        </div>
+
+        <div>
+            <form action="/director" method="GET">
+            <div>
+                <label for="director">Search Director</label>
+                <input name="director" id="director" value="">
+            </div>
+            <div>
+                <button>Search for Director</button>
+            </div>
+            </form>
+        </div>
+
+        <div>
+            <form action="/actor" method="GET">
+            <div>
+                <label for="actor">Search Actor</label>
+                <input name="actor" id="actor" value="">
+            </div>
+            <div>
+                <button>Search for Actor</button>
+            </div>
+            </form>
+        </div>  
+
+<div id="actor">
+ 
+        h1  Actor: #{data.name}
+
+        h5 Movies: 
+        each movie in movies
+            a(href="/movie/" + movie.trim()) #{movie}
+            br
+
+ 
+</div>    
+
+ 
+
+<script >
+
+        
+
+
+</script>
+
+</body>
+<html>
